@@ -1,0 +1,9 @@
+<p>mod2 works!</p>
+<form #myForm="ngForm">
+  <p>{{ mod2.square() }}</p>
+
+  <input type="number" [(ngModel)]="mod2.a" placeholder="a" pattern="[0-9]" name="a"/>
+  <input type="number" [(ngModel)]="mod2.b" placeholder="b" pattern="[0-9]" name="b"/>
+
+  <pre>{{ myForm.value | json }}</pre>
+</form>
